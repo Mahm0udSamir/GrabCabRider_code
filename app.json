@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "GrabCab-Rider",
+    "description": "Taxi Booking App",
+    "slug": "GrabCabRider",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "notification": {
+      "icon": "./assets/images/push_notification.png"
+    },
+    "version": "3.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appIcon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.exicube.grabcabrider",
+      "infoPlist": {
+        "NSLocationAlwaysUsageDescription": "This app uses the location to serve you better",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.exicube.grabcabrider",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA_ROLL"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD0elpNbRCUSExBpL3RQE2O39yOYvwoJ88"
+        }
+      }
+    },
+    "facebookScheme":"fb223064732023723",
+    "facebookAppId":"223064732023723",
+    "facebookDisplayName": "GrabCab"
+  }
+}
